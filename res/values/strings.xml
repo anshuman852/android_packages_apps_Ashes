@@ -490,4 +490,8 @@
     <string name="dui_title">Navigation bar</string>
     <string name="dui_summary">SmartBar, Fling and Pulse</string>
 
+    <!-- Disable QS on secure Lockscreen -->
+    <string name="lockscreen_qs_disabled_title">Disable quick settings on lockscreen</string>
+    <string name="lockscreen_qs_disabled_summary">Disable quick settings tiles on secured lockscreen</string>
+
 </resources>
