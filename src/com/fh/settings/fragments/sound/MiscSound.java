@@ -34,7 +34,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-    public class MiscSound extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+    public class MiscSound extends SettingsPreferenceFragment {
         private static final String TAG = "FhSoundSettings";
 
         private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
@@ -43,6 +43,8 @@ import com.android.settings.Utils;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.fh_other_sound_settings);
+
+    PreferenceScreen prefSet = getPreferenceScreen();
 
     PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
         if (!Utils.isVoiceCapable(getActivity())) {

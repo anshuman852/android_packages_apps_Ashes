@@ -47,7 +47,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
 
-public class RecentsUI extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+public class Recents extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
     private ListPreference mRecentsClearAllLocation;

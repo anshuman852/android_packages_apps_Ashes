@@ -250,11 +250,7 @@
 
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
-    <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
-
-    <!-- Volume button orientation based on current rotation -->
-    <string name="swap_volume_buttons_title">Swap volume rocker orientation</string>
-    <string name="swap_volume_buttons_summary">Adjust the rocker orientation based on current rotation</string>
+    <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string> 
 
     <!-- Volume key controls media stream -->
     <string name="volume_keys_control_media_stream_title">Volume keys control media volume</string>
@@ -298,5 +294,13 @@
     <!-- Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Quick Unlock</string>
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
+    <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
+
+    <!-- Volume button customizations -->
+    <string name="volume_buttons_title">Volume Buttons</string>
+    <string name="volume_buttons_summary">Volume Button customizations</string>
 
 </resources>

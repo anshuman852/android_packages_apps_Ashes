@@ -47,6 +47,8 @@ import com.android.settings.Utils;
 
 import com.android.internal.logging.nano.MetricsProto;
 
+import lineageos.providers.LineageSettings;
+
 public class Pulldown extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
    private static final String QUICK_PULLDOWN = "quick_pulldown";
