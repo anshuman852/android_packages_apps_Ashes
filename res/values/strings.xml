@@ -497,4 +497,9 @@
     <!-- Misc display -->
     <string name="misc_display_title">Miscellaneous UI / UX</string>
     <string name="misc_display_summary">Customize display settings</string>
+
+    <!-- Toast app icon -->
+    <string name="toast_icon_title">Toast app icon</string>
+    <string name="toast_icon_summary">Display the app\'s icon corresponding with the toast</string>
+
 </resources>
