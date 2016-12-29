@@ -65,4 +65,19 @@
 
         </PreferenceCategory>
 
+        <!-- Indicators features -->
+        <PreferenceCategory
+            android:key="indicators_category"
+            android:title="@string/indicators_title_1">
+
+        <!-- Main fragment -->
+        <Preference
+            android:key="pulldown"
+            android:fragment="com.fh.settings.fragments.statusbar.Indicators"
+            android:icon="@drawable/ic_indicators"
+            android:title="@string/indicators_title"
+            android:summary="@string/indicators_summary" />
+
+        </PreferenceCategory>
+
 </PreferenceScreen>

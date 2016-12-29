@@ -193,4 +193,11 @@
     <string name="swap_volume_buttons_summary">Swap volume buttons based on device rotation</string>
     <string name="volume_buttons_category">Volume Buttons</string>
 
+    <!-- Indicator customizations -->
+    <string name="indicators_title">Indicators</string>
+    <string name="indicators_summary">Control statusbar indicators</string>
+    <string name="indicators_title_1">Statusbar Indicators</string>
+    <string name="bluetooth_battery_title">Show Bluetooth battery status</string>
+    <string name="bluetooth_battery_summary">Show battery status for the currently connected bluetooth device, if availible.</string>
+
 </resources>
