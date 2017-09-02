@@ -25,6 +25,13 @@
             android:icon="@drawable/ic_settings_appops"
             android:title="@string/app_ops_category" />
 
+        <!-- Wakelock blocker -->
+        <Preference
+             android:key="wakelock_blocker"
+             android:icon="@drawable/ic_wakelock_fh"
+             android:fragment="com.fh.settings.fragments.misc.WakeLockBlocker"
+             android:title="@string/wakelock_blocker_title" />
+
         <!-- Misc shitz -->
         <PreferenceCategory
             android:key="misc_settings_category"
