@@ -32,6 +32,13 @@
              android:fragment="com.fh.settings.fragments.misc.WakeLockBlocker"
              android:title="@string/wakelock_blocker_title" />
 
+        <!-- Alarm blocker -->
+        <Preference
+             android:id="@+id/alarm_blocker"
+             android:icon="@drawable/ic_alarm_fh"
+             android:fragment="com.fh.settings.fragments.misc.AlarmBlocker"
+             android:title="@string/alarm_blocker" />
+
         <!-- Misc shitz -->
         <PreferenceCategory
             android:key="misc_settings_category"
