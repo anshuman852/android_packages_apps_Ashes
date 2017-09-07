@@ -34,4 +34,11 @@
             android:icon="@drawable/ic_lockscreen_ui"
             android:title="@string/lockscreen_ui" />
 
+    <!-- Lockscreen weather -->
+     <Preference
+        android:key="lockscreen_weather"
+        android:title="@string/lock_screen_weather_settings_title"
+        android:icon="@drawable/ic_lockscreen_weather"
+        android:fragment="com.nitrogen.settings.fragments.LockScreenWeatherSettings" />
+
 </PreferenceScreen>
