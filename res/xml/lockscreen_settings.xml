@@ -18,11 +18,16 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/lockscreen_title">
 
-        <!-- Back Soon -->
-        <Preference
-            android:key="back_soon"
-            android:title="@string/back_soon_title"
-            android:icon="@drawable/ic_settings_about"
-            android:summary="@string/back_soon_summary" />
+    <PreferenceCategory
+        android:key="lockscreen_gestures"
+        android:title="@string/lockscreen_gestures">
+
+        <com.fh.settings.preference.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_lockscreen"
+            android:title="@string/double_tap_to_sleep_lockscreen_title"
+            android:summary="@string/double_tap_to_sleep_lockscreen_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
