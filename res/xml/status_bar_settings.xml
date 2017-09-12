@@ -18,11 +18,17 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/status_bar_title">
 
-        <!-- Back Soon -->
+        <!-- Network Traffic Indicators -->
+        <PreferenceCategory
+            android:key="network traffic indicator"
+            android:title="@string/network_traffic_title" />
+
+        <!-- Main fragment -->
         <Preference
-            android:key="back_soon"
-            android:title="@string/back_soon_title"
-            android:icon="@drawable/ic_settings_about"
-            android:summary="@string/back_soon_summary" />
+            android:key="traffic"
+            android:fragment="com.fh.settings.fragments.statusbar.Traffic"
+            android:icon="@drawable/ic_traffic"
+            android:title="@string/traffic_title"
+            android:summary="@string/traffic_summary" />
 
 </PreferenceScreen>
