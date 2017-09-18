@@ -142,8 +142,10 @@
     <string name="double_tap_to_sleep_lockscreen_title">Double tap to sleep on lockscreen</string>
     <string name="double_tap_to_sleep_lockscreen_summary">Double tap on the top third or bottom shortcut area of the lock screen to put the device to sleep</string>
 
-    <!-- Lockscreen icons -->
+    <!-- Lockscreen and Status bar tuner -->
     <string name="lockscreen_tuner_title">Lockscreen Tuner</string>
+    <string name="tuner">Tuner</string>
+    <string name="statusbar_items_category">Statusbar Tuner</string>
 
     <!-- Network traffic -->
     <string name="traffic_title">Network Traffic indicators</string>
