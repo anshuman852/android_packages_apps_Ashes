@@ -18,11 +18,16 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/sound_title">
 
-        <!-- Back Soon -->
-        <Preference
-            android:key="back_soon"
-            android:title="@string/back_soon_title"
-            android:icon="@drawable/ic_settings_about"
-            android:summary="@string/back_soon_summary" />
+        <PreferenceCategory
+            android:key="sound_misc_settings"
+            android:title="@string/sound_misc">
+
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="screenshot_sound"
+            android:title="@string/screenshot_sound_title"
+            android:summary="@string/screenshot_sound_summary"
+            android:defaultValue="true" />
+
+        </PreferenceCategory>
 
 </PreferenceScreen>

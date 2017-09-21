@@ -19,7 +19,7 @@
                   android:title="@string/pulldown_title">
 
     <PreferenceCategory
-        android:key="quick_pulldown"
+        android:key="quick_pulldown_category"
         android:title="@string/quick_pulldown_title">
 
     <ListPreference
@@ -32,7 +32,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="smart_pulldown"
+        android:key="smart_pulldown_category"
         android:title="@string/smart_pulldown_title">
 
     <ListPreference

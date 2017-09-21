@@ -181,4 +181,9 @@
     <!-- App Ops -->
     <string name="app_ops_category">App Ops</string>
 
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
+    <string name="screenshot_sound_summary">Enable beep sound when screenshot is taken</string>
+    <string name="sound_misc">Miscellaneous</string>
+
 </resources>

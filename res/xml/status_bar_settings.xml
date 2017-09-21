@@ -20,7 +20,7 @@
 
         <!-- Status bar tuner -->
         <PreferenceCategory
-            android:key="statusbar_tuner"
+            android:key="statusbar_tuner_category"
             android:title="@string/tuner">
 
         <!-- Status bar tuner -->
@@ -37,7 +37,7 @@
 
         <!-- Network Traffic Indicators -->
         <PreferenceCategory
-            android:key="network traffic indicator"
+            android:key="network traffic indicator_category"
             android:title="@string/network_traffic_title">
 
         <!-- Main fragment -->
@@ -52,7 +52,7 @@
 
         <!-- Pulldown features -->
         <PreferenceCategory
-            android:key="pulldown"
+            android:key="pulldown_category"
             android:title="@string/pulldown_title">
 
         <!-- Main fragment -->
