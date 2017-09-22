@@ -32,4 +32,18 @@
 
         </PreferenceCategory>
 
+        <PreferenceCategory
+            android:key="misc_settings_category"
+            android:title="@string/misc_title">
+
+        <!-- MediaScanner behavior on boot -->
+        <ListPreference
+            android:key="media_scanner_on_boot"
+            android:icon="@drawable/ic_movie"
+            android:title="@string/media_scanner_on_boot_title"
+            android:entries="@array/media_scanner_on_boot_entries"
+            android:entryValues="@array/media_scanner_on_boot_values" />
+
+        </PreferenceCategory>
+
 </PreferenceScreen>

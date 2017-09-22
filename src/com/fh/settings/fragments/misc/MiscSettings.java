@@ -20,6 +20,13 @@ import android.os.Bundle;
 import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
+import android.app.Activity;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.Intent;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.provider.Settings;
+import android.support.v7.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -28,17 +35,46 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-public class MiscSettings extends SettingsPreferenceFragment {
+public class MiscSettings extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+
     private static final String TAG = "MiscSettings";
+
+    private static final String MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
+
+    private ListPreference mMSOB;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Context mContext = getActivity().getApplicationContext();
+        addPreferencesFromResource(R.xml.misc_settings);
+
+    mMSOB = (ListPreference) findPreference(MEDIA_SCANNER_ON_BOOT);
+        int mMSOBValue = Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.MEDIA_SCANNER_ON_BOOT, 0);
+        mMSOB.setValue(String.valueOf(mMSOBValue));
+        mMSOB.setSummary(mMSOB.getEntry());
+        mMSOB.setOnPreferenceChangeListener(this);
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        Context mContext = getActivity().getApplicationContext();
+
+    if (preference == mMSOB) {
+            int value = Integer.parseInt(((String) newValue).toString());
+            Settings.System.putInt(resolver,
+                    Settings.System.MEDIA_SCANNER_ON_BOOT, value);
+            mMSOB.setValue(String.valueOf(value));
+            mMSOB.setSummary(mMSOB.getEntries()[value]);
+            return true;
+        }
+        return false;
+    }
 
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.FH_SETTINGS;
-
-    }
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.misc_settings);
     }
 }
