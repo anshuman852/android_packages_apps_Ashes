@@ -43,6 +43,13 @@
         android:title="@string/unlock_quick_unlock_control_title"
         android:summary="@string/unlock_quick_unlock_control_summary" />
 
+    <!-- FP vibration -->
+    <SwitchPreference
+        android:key="fingerprint_success_vib"
+        android:title="@string/fprint_sucess_vib_title"
+        android:summary="@string/fprint_sucess_vib_summary"
+        android:persistent="false" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
