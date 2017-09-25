@@ -186,4 +186,11 @@
     <string name="screenshot_sound_summary">Enable beep sound when screenshot is taken</string>
     <string name="sound_misc">Miscellaneous</string>
 
+    <!-- Volume Button customizations -->
+    <string name="volume_rocker_music_controls_title">Playback control</string>
+    <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
+    <string name="swap_volume_buttons">Swap volume buttons</string>
+    <string name="swap_volume_buttons_summary">Swap volume buttons based on device rotation</string>
+    <string name="volume_buttons_category">Volume Buttons</string>
+
 </resources>

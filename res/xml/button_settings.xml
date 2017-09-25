@@ -18,11 +18,25 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/button_title">
 
-        <!-- Back Soon -->
-        <Preference
-            android:key="back_soon"
-            android:title="@string/back_soon_title"
-            android:icon="@drawable/ic_settings_about"
-            android:summary="@string/back_soon_summary" />
+        <!-- Volume Button Category -->
+        <PreferenceCategory
+            android:key="volume_button_category"
+            android:title="@string/volume_buttons_category">
+
+        <!-- Swap volume buttons -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="swap_volume_buttons"
+            android:title="@string/swap_volume_buttons"
+            android:summary="@string/swap_volume_buttons_summary"
+            android:defaultValue="false" />
+
+        <!-- Volume keys control music playback -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="volume_button_music_control"
+            android:title="@string/volume_rocker_music_controls_title"
+            android:summary="@string/volume_rocker_music_controls_summary"
+            android:defaultValue="true" />
+
+        </PreferenceCategory>
 
 </PreferenceScreen>
