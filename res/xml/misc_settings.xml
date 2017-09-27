@@ -18,11 +18,18 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/misc_title">
 
-        <!-- Back Soon -->
+        <!-- App OPS -->
+        <PreferenceCategory
+            android:key="app_ops"
+            android:title="@string/app_ops_category">
+
+        <!-- App OPS Main fragment -->
         <Preference
-            android:key="back_soon"
-            android:title="@string/back_soon_title"
-            android:icon="@drawable/ic_settings_about"
-            android:summary="@string/back_soon_summary" />
+            android:key="app_ops"
+            android:fragment="com.android.settings.applications.AppOpsSummary"
+            android:icon="@drawable/ic_settings_appops"
+            android:title="@string/app_ops_category" />
+
+        </PreferenceCategory>
 
 </PreferenceScreen>

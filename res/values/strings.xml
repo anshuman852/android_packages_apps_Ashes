@@ -178,4 +178,7 @@
     <string name="smart_pulldown_dismissable">no dismissable</string>
     <string name="smart_pulldown_ongoing">no ongoing</string>
 
+    <!-- App Ops -->
+    <string name="app_ops_category">App Ops</string>
+
 </resources>

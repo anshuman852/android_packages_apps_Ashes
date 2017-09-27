@@ -54,7 +54,6 @@ public class Traffic extends SettingsPreferenceFragment implements OnPreferenceC
 
     private CustomSeekBarPreference mThreshold;
     private SystemSettingSwitchPreference mNetMonitor;
-    private ListPreference mNetTrafficType;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -72,14 +71,6 @@ public class Traffic extends SettingsPreferenceFragment implements OnPreferenceC
         mNetMonitor.setOnPreferenceChangeListener(this);
 
         int value = Settings.System.getIntForUser(resolver,
-                Settings.System.NETWORK_TRAFFIC_TYPE, 0, UserHandle.USER_CURRENT);
-        mNetTrafficType = (ListPreference) findPreference("network_traffic_type");
-        mNetTrafficType.setValue(String.valueOf(value));
-        mNetTrafficType.setSummary(mNetTrafficType.getEntry());
-        mNetTrafficType.setOnPreferenceChangeListener(this);
-        mNetTrafficType.setEnabled(isNetMonitorEnabled);
-
-        value = Settings.System.getIntForUser(resolver,
                 Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, 1, UserHandle.USER_CURRENT);
         mThreshold = (CustomSeekBarPreference) findPreference("network_traffic_autohide_threshold");
         mThreshold.setValue(value);
@@ -113,14 +104,6 @@ public class Traffic extends SettingsPreferenceFragment implements OnPreferenceC
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, val,
                     UserHandle.USER_CURRENT);
-            return true;
-        } else if (preference == mNetTrafficType) {
-            int val = Integer.valueOf((String) newValue);
-            Settings.System.putIntForUser(getContentResolver(),
-                    Settings.System.NETWORK_TRAFFIC_TYPE, val,
-                    UserHandle.USER_CURRENT);
-            int index = mNetTrafficType.findIndexOfValue((String) newValue);
-            mNetTrafficType.setSummary(mNetTrafficType.getEntries()[index]);
             return true;
         }
         return false;

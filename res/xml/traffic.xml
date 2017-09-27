@@ -23,14 +23,6 @@
         android:title="@string/network_traffic_state_title"
         android:defaultValue="true" />
 
-    <ListPreference
-        android:key="network_traffic_type"
-        android:title="@string/network_traffic_type"
-        android:entries="@array/show_network_traffic_type_entries"
-        android:entryValues="@array/show_network_traffic_type_values"
-        android:dependency="network_traffic_state"
-        android:persistent="false" />
-
     <com.fh.settings.preferences.CustomSeekBarPreference
         android:key="network_traffic_autohide_threshold"
         android:title="@string/network_traffic_autohide_threshold_title"
