@@ -18,15 +18,28 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/lockscreen_ui">
 
-        <PreferenceCategory
+    <PreferenceCategory
             android:key="lockscreen_ui_sub"
             android:title="@string/ui">
 
-    <com.fh.settings.preference.SystemSettingSwitchPreference
-        android:key="lockscreen_media_metadata"
-        android:title="@string/media_art_title"
-        android:summary="@string/media_art_summary"
-        android:defaultValue="true" />
+        <Preference
+            android:title="@string/lockscreen_tuner_title" >
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.LockscreenActivity" />
+        </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:key="lockscreen_ui_sub"
+            android:title="@string/lockscreen_misc">
+
+        <com.fh.settings.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_media_metadata"
+            android:title="@string/media_art_title"
+            android:summary="@string/media_art_summary"
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 
