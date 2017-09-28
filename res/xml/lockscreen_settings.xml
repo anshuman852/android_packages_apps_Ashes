@@ -20,7 +20,8 @@
 
     <!-- Lockscreen Tuner -->
     <Preference
-        android:title="@string/lockscreen_tuner_title" >
+        android:title="@string/lockscreen_tuner_title"
+        android:icon="@drawable/ic_lockscreen_tuner">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.LockscreenActivity" />

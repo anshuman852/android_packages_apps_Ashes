@@ -245,4 +245,7 @@
     <string name="recents_ui_title">Recents UI</string>
     <string name="recents_ui_summary">Control Recents panel</string>
 
+    <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Navbar Tuner</string>
+
 </resources>
