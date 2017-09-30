@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-      Copyright (C) 2016 FireHound ROMs
+     Copyright (C) 2017 FireHound ROMs
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -16,29 +16,17 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-                  android:title="@string/lockscreen_title">
+                  android:title="@string/lockscreen_ui">
 
-    <PreferenceCategory
-        android:key="lockscreen_ui"
-        android:title="@string/lockscreen_ui">
-
-    <Preference
+        <PreferenceCategory
             android:key="lockscreen_ui_sub"
-            android:fragment="com.fh.settings.fragments.lockscreen.LockScreenUI"
-            android:icon="@drawable/ic_lockscreen_ui"
-            android:title="@string/lockscreen_ui" />
+            android:title="@string/ui">
 
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="lockscreen_gestures"
-        android:title="@string/lockscreen_gestures">
-
-        <com.fh.settings.preference.SystemSettingSwitchPreference
-            android:key="double_tap_sleep_lockscreen"
-            android:title="@string/double_tap_to_sleep_lockscreen_title"
-            android:summary="@string/double_tap_to_sleep_lockscreen_summary"
-            android:defaultValue="true" />
+    <com.fh.settings.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_media_metadata"
+        android:title="@string/media_art_title"
+        android:summary="@string/media_art_summary"
+        android:defaultValue="true" />
 
     </PreferenceCategory>
 
