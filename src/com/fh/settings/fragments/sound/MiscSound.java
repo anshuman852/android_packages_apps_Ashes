@@ -17,10 +17,16 @@
 package com.fh.settings.fragments.sound;
 
 import android.os.Bundle;
-import android.support.v7.preference.ListPreference;
-import android.support.v14.preference.SwitchPreference;
+import android.content.Context;
+import android.content.ContentResolver;
 import android.support.v7.preference.Preference;
-
+import android.support.v14.preference.SwitchPreference;
+import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.provider.Settings;
+import android.util.Log;
 import com.android.internal.logging.nano.MetricsProto;
 
 import android.content.res.Resources;
@@ -28,17 +34,29 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-public class MiscSound extends SettingsPreferenceFragment {
-    private static final String TAG = "FhSoundSettings";
+    public class MiscSound extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+        private static final String TAG = "FhSoundSettings";
 
-    @Override
-    public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.FH_SETTINGS;
+        private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
 
-    }
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.fh_other_sound_settings);
+
+    PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+        if (!Utils.isVoiceCapable(getActivity())) {
+            prefSet.removePreference(incallVibCategory);
+        }
+    }
+
+    @Override
+    public int getMetricsCategory() {
+        return MetricsProto.MetricsEvent.FH_SETTINGS;
+    }
+
+     @Override
+    public void onResume() {
+        super.onResume();
     }
 }
