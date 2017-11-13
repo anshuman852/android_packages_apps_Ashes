@@ -27,4 +27,12 @@
                 android:targetClass="com.android.systemui.tuner.NavBarActivity" />
     </Preference>
 
+    <!-- DUI -->
+    <Preference
+            android:key="dui_category"
+            android:fragment="com.fh.settings.fragments.navbar.dui.DUI"
+            android:icon="@drawable/ic_dui"
+            android:title="@string/dui_title"
+            android:summary="@string/dui_summary" />
+
 </PreferenceScreen>
