@@ -200,4 +200,11 @@
     <string name="bluetooth_battery_title">Show Bluetooth battery status</string>
     <string name="bluetooth_battery_summary">Show battery status for the currently connected bluetooth device, if availible.</string>
 
+    <!-- QS Customizations -->
+    <string name="tiles_title_1">Quick Settings tiles</string>
+    <string name="tiles_title">Tiles</string>
+    <string name="tiles_summary">Control centre for QS tiles</string>
+    <string name="qs_misc_title">Miscellaneous</string>
+    <string name="qs_misc_summary">Miscellaneous Quick Settings customizations</string>
+
 </resources>
