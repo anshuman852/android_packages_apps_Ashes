@@ -208,7 +208,7 @@
     <string name="qs_misc_summary">Miscellaneous Quick Settings customizations</string>
 
     <!-- QS rows and columns -->
-    <string name="qs_rows">Layout</string>
+    <string name="qs_rows">Tiles Layout</string>
     <string name="qs_layout_category">QS tiles layout</string>
     <string name="qs_rows_columns_title">QS rows and columns</string>
     <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
