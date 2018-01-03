@@ -19,11 +19,6 @@
                   android:title="@string/status_bar_title">
 
         <!-- Status bar tuner -->
-        <PreferenceCategory
-            android:key="statusbar_tuner_category"
-            android:title="@string/tuner">
-
-        <!-- Status bar tuner -->
         <Preference
             android:key="systemui_tuner_statusbar"
             android:title="@string/statusbar_items_category"
@@ -33,13 +28,6 @@
                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
         </Preference>
 
-        </PreferenceCategory>
-
-        <!-- Network Traffic Indicators -->
-        <PreferenceCategory
-            android:key="network traffic indicator_category"
-            android:title="@string/network_traffic_title">
-
         <!-- Main fragment -->
         <Preference
             android:key="traffic"
@@ -47,13 +35,6 @@
             android:icon="@drawable/ic_traffic"
             android:title="@string/traffic_title"
             android:summary="@string/traffic_summary" />
-
-        </PreferenceCategory>
-
-        <!-- Pulldown features -->
-        <PreferenceCategory
-            android:key="pulldown_category"
-            android:title="@string/pulldown_title">
 
         <!-- Main fragment -->
         <Preference
@@ -63,21 +44,12 @@
             android:title="@string/pulldown_title"
             android:summary="@string/pulldown_summary" />
 
-        </PreferenceCategory>
-
-        <!-- Indicators features -->
-        <PreferenceCategory
-            android:key="indicators_category"
-            android:title="@string/indicators_title_1">
-
         <!-- Main fragment -->
         <Preference
-            android:key="pulldown"
+            android:key="indicators_category"
             android:fragment="com.fh.settings.fragments.statusbar.Indicators"
             android:icon="@drawable/ic_indicators"
             android:title="@string/indicators_title"
             android:summary="@string/indicators_summary" />
-
-        </PreferenceCategory>
 
 </PreferenceScreen>

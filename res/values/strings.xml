@@ -222,4 +222,8 @@
     <string name="media_scanner_on_boot_ask">Ask to scan (notification)</string>
     <string name="media_scanner_on_boot_disabled">Do not scan media</string>
 
+    <!-- Misc sound -->
+    <string name="sound_other_settings">Other Sounds</string>
+    <string name="sound_other_summary">Miscellaneous sound controls</string>
+
 </resources>

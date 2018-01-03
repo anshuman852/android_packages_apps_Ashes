@@ -18,11 +18,6 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/misc_title">
 
-        <!-- App OPS -->
-        <PreferenceCategory
-            android:key="app_ops"
-            android:title="@string/app_ops_category">
-
         <!-- App OPS Main fragment -->
         <Preference
             android:key="app_ops"
@@ -30,8 +25,7 @@
             android:icon="@drawable/ic_settings_appops"
             android:title="@string/app_ops_category" />
 
-        </PreferenceCategory>
-
+        <!-- Misc shitz -->
         <PreferenceCategory
             android:key="misc_settings_category"
             android:title="@string/misc_title">

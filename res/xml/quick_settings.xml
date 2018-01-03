@@ -18,11 +18,6 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/qs_title">
 
-        <!-- Tiles -->
-        <PreferenceCategory
-            android:key="tiles_category"
-            android:title="@string/tiles_title_1">
-
         <!-- Main fragment -->
         <Preference
             android:key="tiles"
@@ -31,13 +26,6 @@
             android:title="@string/tiles_title"
             android:summary="@string/tiles_summary" />
 
-        </PreferenceCategory>
-
-        <!-- QS Misc -->
-        <PreferenceCategory
-            android:key="misc_qs_category"
-            android:title="@string/qs_misc_title">
-
         <!-- Main fragment -->
         <Preference
             android:key="qs_misc"
@@ -45,7 +33,5 @@
             android:icon="@drawable/ic_qs_misc"
             android:title="@string/qs_misc_title"
             android:summary="@string/qs_misc_summary" />
-
-        </PreferenceCategory>
 
 </PreferenceScreen>
