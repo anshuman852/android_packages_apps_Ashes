@@ -23,6 +23,9 @@
     <string name="fh_section_title">Burnt Extras</string>
     <string name="fh_title">Fire Scars</string>
 
+    <!-- RESET -->
+    <string name="reset">Reset</string>
+
     <!-- FireHound Info -->
     <string name="fh_developer_title">Developers Github</string>
     <string name="fh_developer_summary">Support the Developer and FireHound Team</string>
