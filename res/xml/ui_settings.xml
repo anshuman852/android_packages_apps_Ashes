@@ -18,11 +18,12 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/display_title">
 
-        <!-- Back Soon -->
+        <!-- Main fragment -->
         <Preference
-            android:key="back_soon"
-            android:title="@string/back_soon_title"
-            android:icon="@drawable/ic_settings_about"
-            android:summary="@string/back_soon_summary" />
+            android:key="misc_display"
+            android:fragment="com.fh.settings.fragments.ui.MiscDisplay"
+            android:icon="@drawable/ic_misc_display"
+            android:title="@string/misc_diplay_title"
+            android:summary="@string/misc_display_summary" />
 
 </PreferenceScreen>

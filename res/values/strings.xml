@@ -115,7 +115,7 @@
     <string name="recents_settings">Recents</string>
     <string name="button_title">Hardware Buttons</string>
     <string name="navbar_title">Navigation Bar</string>
-    <string name="display_title">Display / UI</string>
+    <string name="display_title">UI / UX</string>
     <string name="sound_title">Sounds</string>
     <string name="animation_settings">Animations</string>
     <string name="misc_title">Miscellaneous</string>
@@ -494,4 +494,7 @@
     <string name="lockscreen_qs_disabled_title">Disable quick settings on lockscreen</string>
     <string name="lockscreen_qs_disabled_summary">Disable quick settings tiles on secured lockscreen</string>
 
+    <!-- Misc display -->
+    <string name="misc_display_title">Miscellaneous UI / UX</string>
+    <string name="misc_display_summary">Customize display settings</string>
 </resources>

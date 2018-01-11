@@ -3,13 +3,12 @@
     android:width="24dp"
     android:height="24dp"
     android:viewportWidth="24"
-    android:viewportHeight="24"
-    android:tint="?android:attr/colorControlNormal">
+    android:viewportHeight="24">
 
     <path
         android:pathData="M0 0h24v24H0z" />
     <path
-        android:fillColor="@android:color/black"
+        android:fillColor="#000000"
         android:pathData="M12 6c3.87 0 7 3.13 7 7 0 .84-.16 1.65-.43 2.4l1.52 1.52c.58-1.19 .91 -2.51 .91
 -3.92 0-4.97-4.03-9-9-9-1.41 0-2.73 .33 -3.92 .91 L9.6 6.43C10.35 6.16 11.16 6
 12 6zm10-.28l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM2.92 2.29L1.65 3.57 2.98
