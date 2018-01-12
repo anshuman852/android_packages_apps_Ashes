@@ -564,4 +564,8 @@
     <string name="show_emergency_button_on">Emergency Button is visible on lockscreen</string>
     <string name="show_emergency_button_off">Toggle to show Emergency Button on Lockscreen</string>
 
+     <!-- Volume Dialog Expanded -->
+    <string name="volume_dialog_force_expanded_title">Force Expanded Volume Panel</string>
+    <string name="volume_dialog_force_expanded_summary">Force the volume panel to always appear in expanded mode</string>
+
 </resources>
