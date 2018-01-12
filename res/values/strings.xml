@@ -564,12 +564,20 @@
     <string name="show_emergency_button_on">Emergency Button is visible on lockscreen</string>
     <string name="show_emergency_button_off">Toggle to show Emergency Button on Lockscreen</string>
 
-     <!-- Volume Dialog Expanded -->
+    <!-- Volume Dialog Expanded -->
     <string name="volume_dialog_force_expanded_title">Force Expanded Volume Panel</string>
     <string name="volume_dialog_force_expanded_summary">Force the volume panel to always appear in expanded mode</string>
 
-   <!-- Three-fingers-swipe to screenshot -->
-   <string name="three_finger_gesture">Three Finger screenshot</string>
-   <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Three Finger screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
+    <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+
+    <!-- Misc notifications tab -->
+    <string name="misc_notifications_title">Notification Control</string>
+    <string name="misc_notifications_summary">Customize notifications controls</string>
 
 </resources>
