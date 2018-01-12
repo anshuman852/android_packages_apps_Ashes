@@ -50,6 +50,14 @@
         android:summary="@string/fprint_sucess_vib_summary"
         android:persistent="false" />
 
+    <!-- Disable emergency button on lockscreen -->
+    <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="show_emergency_button"
+            android:title="@string/show_emergency_button"
+            android:summaryOn="@string/show_emergency_button_on"
+            android:summaryOff="@string/show_emergency_button_off"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

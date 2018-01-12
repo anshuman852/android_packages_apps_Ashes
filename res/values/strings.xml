@@ -559,4 +559,9 @@
     <string name="anbi_title">Accidental touch</string>
     <string name="anbi_summary">Prevent interaction with navigation buttons while the screen is being touched</string>
 
+    <!-- Show or Hide emergency button on lockscreen-->
+    <string name="show_emergency_button">Show Emergency Button</string>
+    <string name="show_emergency_button_on">Emergency Button is visible on lockscreen</string>
+    <string name="show_emergency_button_off">Toggle to show Emergency Button on Lockscreen</string>
+
 </resources>
