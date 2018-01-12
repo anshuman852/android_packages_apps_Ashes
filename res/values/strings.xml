@@ -568,4 +568,8 @@
     <string name="volume_dialog_force_expanded_title">Force Expanded Volume Panel</string>
     <string name="volume_dialog_force_expanded_summary">Force the volume panel to always appear in expanded mode</string>
 
+   <!-- Three-fingers-swipe to screenshot -->
+   <string name="three_finger_gesture">Three Finger screenshot</string>
+   <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+
 </resources>
