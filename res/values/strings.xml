@@ -510,4 +510,13 @@
     <string name="allow_signature_fake">Allow signature spoofing</string>
     <string name="allow_signature_fake_summary">Allow apps to bypass security systems by pretending to be a different app</string>
 
+    <!-- Summaries -->
+    <string name="lockscreen_tuner_summary">Customize lockscreen parts</string>
+    <string name="lock_screen_weather_settings_summary">It\'s hot or raining today!</string>
+    <string name="lockscreen_ui_summary">Miscellaneous lockscreen settings</string>
+    <string name="app_ops_summary">App Ops Privacy</string>
+    <string name="wakelock_blocker_sumary">Block various wakelocks</string>
+    <string name="navbar_tuner_summary">Customize navigation bar</string>
+    <string name="statusbar_items_category_summary">Customize statusbar parta</string>
+
 </resources>
